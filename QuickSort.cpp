@@ -9,7 +9,7 @@ int partition(vector<int>& v, int low, int high) {
         do { i++; } while (v[i] < pivot);
         do { j--; } while (v[j] > pivot);
         if (i >= j) return j;
-        std::swap(v[i], v[j]);
+        swap(v[i], v[j]);
     }
 }
 
